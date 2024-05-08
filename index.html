@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes grow {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .grow-effect {
+      animation: grow 0.7s ease-in-out forwards;
+    }
+  </style>
+  <title>Gardening Product Modal</title>
+</head>
+
+<body class="bg-green-100 min-h-screen flex items-center justify-center">
+  <div class="p-8 max-w-md rounded-xl shadow-lg bg-white border border-green-200 grow-effect">
+    <!-- Image Container -->
+    <div class="mb-4">
+      <img src="images/garden-trowel.webp" alt="Gardening Tool" class="w-full h-auto rounded-lg">
+    </div>
+    <!-- Content Area -->
+    <div>
+      <!-- Title & Description -->
+      <h2 class="text-2xl font-bold text-green-800">Eco Garden Trowel</h2>
+      <p class="text-gray-600 mt-2">Crafted from recycled materials, this trowel is perfect for your gardening needs,
+        offering both durability and comfort.</p>
+      <!-- Price Tag -->
+      <p class="text-xl text-green-700 mt-3">Price: $24.99</p>
+      <!-- Buttons -->
+      <div class="flex space-x-4 mt-4">
+        <button
+          class="flex-1 py-2 px-4 rounded-lg text-white bg-green-600 hover:bg-green-700 transition duration-300">Add to
+          Cart</button>
+        <button
+          class="flex-1 py-2 px-4 rounded-lg border border-green-500 text-green-700 hover:bg-green-100 transition duration-300">More
+          Info</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
